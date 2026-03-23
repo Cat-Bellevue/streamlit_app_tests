@@ -11,57 +11,6 @@
   
 
 <title>Portfolio | Data Analyst</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #1f2937;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h1, h2 {
-      margin-bottom: 1rem;
-    }
-    .project {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      margin-bottom: 2rem;
-    }
-    .project img {
-      max-width: 100%;
-      border-radius: 4px;
-    }
-    .project a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #2563eb;
-      text-decoration: none;
-    }
-    .project a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9em;
-      color: #555;
-    }
-  </style>
 </head>
 
 <body>
@@ -75,43 +24,1052 @@
 <main>
 
 
-<section>
-    <h2>📊 Recent Projects</h2>
+<body>
 
-    <div class="project">
-      <h3>CO2 Emissions Analysis for Shipping Vessels</h3>
-      <img src="images/Cargill_logo.jpg" alt="Dashboard screenshot - shipping emissions">
-      <p>Interactive dashboard visualizing emissions based on routes, vessel type, and time period.</p>
-      <a href="https://public.tableau.com/views/FRENCH_Airports_traffic/Story3?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Dashboard</a>
+<div id="projects">
+  <div class="section-head">
+    <p>Filter by tool/area. Click "View project" to jump to the case study.</p>
+
+    <div class="search" role="search">
+      <span aria-hidden="true">⌕</span>
+      <input id="q" type="search" placeholder="Search projects (e.g., emissions, Tableau, Snowflake)…" />
     </div>
 
-    <div class="project">
-      <h3>Food Production Monitoring (Power BI)</h3>
-      <img src="images/linkedin_wordcloud.png" alt="Dashboard screenshot - Power BI">
-      <p>Weekly monitoring of production line performance, yield rate, and issue tracking by category.</p>
-      <a href="https://app.powerbi.com/view?r=..." target="_blank">View Dashboard</a>
+    <div class="filter-row" aria-label="Tag filters"> 
+      <div>
+        <p style="font-size: 14px; color: #90aecc; margin: 4px 0;"></p>
+        <button class="pill active"   data-filter="all"       type="button">All</button>
+      </div>
+      <div>
+        <p style="font-size: 14px; color: #90aecc; margin: 4px 0;">Filter a tool:</p>
+        <button class="pill"          data-filter="tableau"   type="button">Tableau</button>
+        <button class="pill"          data-filter="powerbi"   type="button">Power BI</button>
+        <button class="pill"          data-filter="python"    type="button">Python</button>
+        <button class="pill"          data-filter="sql"       type="button">SQL</button>
+        <button class="pill"          data-filter="excel"     type="button">Excel</button>
+        <button class="pill"          data-filter="a_i"       type="button">AI coding</button>
+      </div>
+      <div>
+        <p style="font-size: 14px; color: #90aecc; margin: 4px 0;">Filter a method:</p>
+        <button class="pill"          data-filter="data_collect"  type="button">Data Collection</button>
+        <button class="pill"          data-filter="data_prep"     type="button">Data Preparation</button>                
+        <button class="pill"          data-filter="data_modeling" type="button">Data Modeling</button>
+        <button class="pill"          data-filter="stats"         type="button">Statistical Analysis</button>  
+        <button class="pill"          data-filter="data_viz"      type="button">Data Visualisation</button>                
+        <button class="pill"          data-filter="automation"    type="button">Automation</button>
+      </div>
+      <div>
+        <p style="font-size: 14px; color: #90aecc; margin: 4px 0;">Filter by theme:</p>
+        <button class="pill"          data-filter="sustainability" type="button">Sustainability</button>
+        <button class="pill"          data-filter="hr_analytics"   type="button">HR Analytics</button>
+        <button class="pill"          data-filter="marketing"      type="button">Marketing</button>
+        <button class="pill"          data-filter="business_analysis" type="button">Business Analysis</button>
+        <button class="pill"          data-filter="digitalisation" type="button">Digitalisation</button>
+        <button class="pill"          data-filter="financial"      type="button">Financial Analytics</button>
+        <button class="pill"          data-filter="operation"      type="button">Operational Analytics</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="project-grid">
+
+  <!-- CARD 1 : CARGILL -->
+    <article class="proj-card"
+      data-tags="tableau snowflake aws python knime sustainability sql data collection preparation visualisation data_collect data_prep data_viz api digitalisation financial excel business_analysis"
+      data-title="Transforming business process through digitalisation"
+      data-img="https://drive.google.com/thumbnail?id=1jc1B7yk-U8iT267Rut8FYnMCrCK8wFED&sz=w800"
+       data-icon="⚙️"
+      data-link="#project-digitalisation">
+      <div class="card-img-wrapper"></div>
+      <div class="card-body">
+        <h3>Transforming business process through digitalisation</h3>
+        <div class="button-container">
+          <button class="skill-button">Data Collection</button>
+          <button class="skill-button">Data Preparation</button>
+          <button class="skill-button">Data Visualization</button>
+          <button class="skill-button">ETL</button>
+          <button class="skill-button">Python</button>
+          <button class="skill-button">SQL</button>
+          <button class="skill-button">Snowflake</button>
+          <button class="skill-button">Tableau</button>
+          <button class="skill-button">KNIME</button>
+
+        </div>
+        <div class="card-footer">
+          <button class="view-btn" data-target="project-digitalisation">View project</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 2 : AIRPORT -->
+    <article class="proj-card"
+      data-tags="tableau data visualization"
+      data-title="French airports passengers traffic"
+      data-img="https://drive.google.com/thumbnail?id=1khZgPLLxgIwZeb18zDbNrJJrnPoQpfy-&sz=w800"
+      data-icon="✈️"
+      data-link="#project-airports">
+      <div class="card-img-wrapper"></div>
+      <div class="card-body">
+        <h3>French airports passengers traffic</h3>
+        <div class="button-container">
+          <button class="skill-button">Tableau</button>
+          <button class="skill-button">Data Visualization</button>
+        </div>
+        <div class="card-footer">
+          <button class="view-btn" data-target="project-airports">View project</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 3 : BELLEVUE DESIGN -->
+    <article class="proj-card"
+      data-tags="powerbi python dax power query hr_analytics data visualization data_prep data_viz"
+      data-title="Employee analysis - Bellevue Design"
+      data-img="https://drive.google.com/thumbnail?id=1NGPrB0-30fdBKkPJggRISAalmBfnbVsf&sz=w800"
+      data-icon="👥"
+      data-link="#project-pbi">
+      <div class="card-img-wrapper"></div>
+      <div class="card-body">
+        <h3>HR Analytics project - Bellevue Design</h3>
+        <div class="button-container">
+          <button class="skill-button">Power BI</button>
+          <button class="skill-button">DAX</button>
+          <button class="skill-button">Power Query</button>
+          <button class="skill-button">Python</button>
+        </div>
+        <div class="card-footer">
+          <button class="view-btn" data-target="project-pbi">View project</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 4 : GAPMINDER -->
+    <article class="proj-card"
+      data-tags="python matplotlib seaborn data visualisation data_viz"
+      data-title="Gapminder map"
+      data-img="https://drive.google.com/thumbnail?id=1MZurGtR_IcgU33xpbXPsarfnQ98E9uYn&sz=w800"
+      data-icon="🌍"
+      data-link="#project-map">
+      <div class="card-img-wrapper"></div>
+      <div class="card-body">
+        <h3>Gapminder map</h3>
+        <div class="button-container">
+          <button class="skill-button">Python</button>
+          <button class="skill-button">Matplotlib</button>
+          <button class="skill-button">Seaborn</button>
+        </div>
+        <div class="card-footer">
+          <button class="view-btn" data-target="project-map">View project</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 5 : WINE STUDY -->
+    <article class="proj-card"
+      data-tags="python matplotlib seaborn tableau m_l machine learning data visualization data_viz data_prep business_analysis marketing"
+      data-title="Study of wine on the US market"
+      data-img="https://drive.google.com/thumbnail?id=1D9KSwDWSVOgplxwACzQdsenUW1qlouq4&sz=w800"
+      data-icon="🍷"
+      data-link="#project-wine">
+      <div class="card-img-wrapper"></div>
+      <div class="card-body">
+        <h3>Study of wine on the US market</h3>
+        <div class="button-container">
+          <button class="skill-button">Python</button>
+          <button class="skill-button">Tableau</button>
+          <button class="skill-button">Machine Learning</button>
+        </div>
+        <div class="card-footer">
+          <button class="view-btn" data-target="project-wine">View project</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 6 : WEBSCRAPING & GEOCODING -->
+    <article class="proj-card"
+      data-tags="python scraping folium api data_collect data_viz geocoding data collection visualization"
+      data-title="Webscraping & Geocoding"
+      data-img="https://drive.google.com/thumbnail?id=1TVCLoQlNYH77gLEDFfgmr_b6a0Ed2hLH&sz=w800"
+      data-icon="🗺️"
+      data-link="#project-scraping">
+      <div class="card-img-wrapper"></div>
+      <div class="card-body">
+        <h3>Webscraping & Geocoding</h3>
+        <div class="button-container">
+          <button class="skill-button">Data Collection</button>
+          <button class="skill-button">Data Preparation</button>
+          <button class="skill-button">Python</button>
+          <button class="skill-button">Webscraping</button>
+          <button class="skill-button">Folium</button>
+          <button class="skill-button">API call</button>
+        </div>
+        <div class="card-footer">
+          <button class="view-btn" data-target="project-scraping">View project</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 7 : SPOTIFY ANALYSIS -->
+    <article class="proj-card"
+      data-tags="python matplotlib seaborn m_l machine learning data visualization data_viz business_analysis collection data_collect data_viz stats"
+      data-title="Spotify analysis"
+      data-img="https://drive.google.com/thumbnail?id=1AatCgBlebJDS6hcZmSfpdNE_6M8apRZm&sz=w800"
+      data-icon="🎵"
+      data-link="#project-spotify">
+      <div class="card-img-wrapper"></div>
+      <div class="card-body">
+        <h3>Spotify analysis</h3>
+        <div class="button-container">
+          <button class="skill-button">Data Collection</button>
+          <button class="skill-button">Data Preparation</button>
+          <button class="skill-button">Python</button>
+          <button class="skill-button">Machine Learning</button>
+          <button class="skill-button">Data Visualization</button>
+        </div>
+        <div class="card-footer">
+          <button class="view-btn" data-target="project-spotify">View project</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 8 : EVENT AGGREGATOR -->
+    <article class="proj-card"
+      data-tags="python streamlit api scraping a_i data collection data preparation automation data_collect data_prep automation modeling"
+      data-title="Event aggregator - Data Product MVP"
+      data-img="https://drive.google.com/thumbnail?id=1_XTFBR3_bK8CQaYKPLgKYhw201tcRYp4&sz=w800"
+      data-icon="📅"
+      data-link="#project-event">
+      <div class="card-img-wrapper"></div>
+      <div class="card-body">
+        <h3>Event aggregator - Data Product MVP</h3>
+        <div class="button-container">
+          <button class="skill-button">Python</button>
+          <button class="skill-button">Streamlit</button>
+          <button class="skill-button">Webscraping</button>
+          <button class="skill-button">AI</button>
+          <button class="skill-button">Automation</button>
+          <button class="skill-button">Modeling</button>
+
+        </div>
+        <div class="card-footer">
+          <button class="view-btn" data-target="project-event">View project</button>
+        </div>
+      </div>
+    </article>
+
+    <p id="no-results">No projects match your search.</p>
+  </div>
+</div>
+
+<!-- PROJECT DETAIL SECTIONS -->
+
+<!-- CARD 1 DETAIL: CARGILL -->
+<section id="project-digitalisation" class="project-detail">
+  <div class="detail-header">
+    <div class="detail-header-content">
+      <h1>Improving business processes through digitalisation</h1>
+      <h2>CARGILL Ocean Transportation</h2>
+      <p class="detail-meta">March 2022 - December 2024<br>Geneva, SWITZERLAND</p>
+      <div class="detail-skills">
+        <span class="detail-skill-tag">Python</span>
+        <span class="detail-skill-tag">SQL</span>
+        <span class="detail-skill-tag">Snowflake</span>
+        <span class="detail-skill-tag">Tableau</span>
+        <span class="detail-skill-tag">Data Preparation</span>
+        <span class="detail-skill-tag">Data Visualization</span>
+      </div>
+      <p>
+        <li>Within the Data team, supporting Cargill Ocean Transportation division in its digitalization efforts and translating the business needs into tailored data solutions.</li>
+        <li>Provided analytical support to various team and involved at every stage of the digitalization process and in close collaboration with business analysts and data engineers.</li>
+        <li>Preliminary analyses, designing workflows, cleaning, preparation, data enrichment, validation, and design KPIs visualisations  through dashboards, as well as performance monitoring and improvement.</li>
+      </p>
+      <p>During my time at Cargill, I built complex strategic dashboards with Tableau for various projects (details below) and was site administrator of OT (Ocean Transportation) Tableau server - user management, projects management, publishing and maintenance of data source, and point of contact of Cargill Tableau server admins.</p>
+      <p><i>Complex filtering system | Calculated fields | Mapping | Tooltips | Site admin</i></p>
+
+    </div>
+    <img alt="CARGILL Ocean Transportation" src="https://drive.google.com/thumbnail?id=1jc1B7yk-U8iT267Rut8FYnMCrCK8wFED&sz=w800" class="detail-image" />
+  </div>
+
+  <div class="projects-accordion">
+    <div class="accordion-item">
+      <button class="accordion-header" type="button">
+        <span>🌍 Project: Vessel carbon emissions automation (Eunice project) - Operational Sustainability data</span>
+        <span class="accordion-toggle">▼</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <div class="accordion-section">
+            <h3>📋 Objective</h3>
+            <p>For <strong>Operations</strong>, monitor and analyse the fleet's sustainability metrics (4,000 ships annually) to make strategic decisions toward reducing emissions (goal of zero emissions by 2050).</p>
+            <ul>
+              <li>Collaborating to develop an automated carbon emissions calculation solution and create a dashboard for detailed analysis of emissions and influencing factors.</li>
+            </ul>
+          </div>
+
+          <div class="accordion-section">
+            <h3>👥 Department</h3>
+            <p>Operation</p>
+          </div>
+
+          <div class="accordion-section">
+            <h3>🛠️ Tools</h3>
+            <p>Python (pandas, numpy), Tableau desktop, Tableau Server, SQL, Snowflake, Excel (Macros), external APIs</p>
+          </div>
+
+          <div class="accordion-section">
+            <h3>⚙️ Process</h3>
+            <ul>
+              <li>Collected raw data from various sources (internal or external datasources)</li>
+              <li>Cleaned and merged datasets using Python</li>
+              <li>Modeled dataflow</li>
+              <li>Built a dashboard in Tableau to monitor emissions</li>
+            </ul>
+          </div>
+
+          <div class="accordion-section">
+            <h3>✨ Result</h3>
+            <ul>
+              <li>Automated pipeline and interactive visualization for emissions tracking,</li>
+              <li>Decrease of EEOI emission in 2024 by 3% <a href="https://www.cargill.com/doc/1432279394050/2024-decarbonization-update-cargill-ocean-transportation.pdf" style="color: #003366; text-decoration: underline;">(link to Sustainability report on Cargill OT)</a>,</li>
+              <li>Improved reporting efficiency by 20%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
-      <div class="project">
-      <h3>French airports traffic</h3>
-      <img src="images/airports_tableau.png" alt="Dashboard screenshot - French airport traffic">
-      <p>Interactive dashboard visualizing emissions based on routes, vessel type, and time period.</p>
-      <a href="https://public.tableau.com/views/FRENCH_Airports_traffic/Story3?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Dashboard (Link to TABLEAU Public)</a>
+    <div class="accordion-item">
+      <button class="accordion-header" type="button">
+        <span>📊 Project: Trade Entry Checks - Process control & Efficiency (Front & Middle Office, Management)</span>
+        <span class="accordion-toggle">▼</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <div class="accordion-section">
+            <h3>📋 Objective</h3>
+            <p>Contributed to the implementation of an application that facilitates interaction between the team entering new trades and the team verifying their accuracy.</p>
+          </div>
+
+          <div class="accordion-section">
+            <h3>👥 Department</h3>
+            <p>Front & Middle Office, Management</p>
+          </div>
+
+          <div class="accordion-section">
+            <h3>🛠️ Tools</h3>
+            <p>Tableau desktop, Tableau Server, SQL, Snowflake, Power BI, Excel</p>
+          </div>
+
+          <div class="accordion-section">
+            <h3>⚙️ Process</h3>
+            <ul>
+              <li>Data integrity validation</li>
+              <li>Collected raw data from various sources (internal or external datasources)</li>
+              <li>Designed interactive Tableau dashboards with drill-down capabilities</li>
+            </ul>
+          </div>
+
+          <div class="accordion-section">
+            <h3>✨ Result</h3>
+            <ul>
+              <li>Real-time visibility into process performance</li>
+              <li>Reduced processing errors by 15%</li>
+              <li>Enabled faster decision-making for management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </section>
+    <div class="accordion-item">
+      <button class="accordion-header" type="button">
+        <span>💰 Project: P&L variation analysis - Financial Control & Data Reliability (Back Office)</span>
+        <span class="accordion-toggle">▼</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <div class="accordion-section">
+            <h3>📋 Objective</h3>
+            <p>Delivering a quick and reliable solution with datasets enabling automated Profit and Loss (P&L) variance analysis.</p>
+          </div>
 
-  <section>
-    <h2>📄 Resume & Contact</h2>
-    <p>Check out my <a href="CV_your_name.pdf" target="_blank">PDF Resume</a>.</p>
-    <p>You can contact me at: <a href="mailto:catherine_fenu.pro@xialy.com">Catherine_Fenu.pro@xialy.com</a></p>
+          <div class="accordion-section">
+            <h3>👥 Department</h3>
+            <p>Financial Controllers (Finance, Back Office)</p>
+          </div>
+
+          <div class="accordion-section">
+            <h3>🛠️ Tools</h3>
+            <p>SQL, KNIME, MS SQL Server, Impala, Excel, Tableau desktop, Snowflake</p>
+          </div>
+
+          <div class="accordion-section">
+            <h3>⚙️ Process</h3>
+            <ul>
+              <li>Collecting business requirements</li>
+              <li>Collecting data from various internal sources (MS SQL Server, Impala, Excel)</li>
+              <li>Design end-to-end data workflow processes (KNIME)</li>
+              <li>Data preparation and structuration</li>
+              <li>Preparing for future automation on Snowflake</li>
+            </ul>
+          </div>
+
+          <div class="accordion-section">
+            <h3>✨ Result</h3>
+            <ul>
+              <li>Datasets automated outputs for Tableau analysis</li>
+              <li>Data workflow prepared for Snowflake automation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" data-target="projects">↑ Back to projects</button>
 </section>
+
+<!-- CARD 2 DETAIL: AIRPORTS -->
+<section id="project-airports" class="project-detail">
+    <div class="detail-header">
+        <div class="detail-header-content"; background: linear-gradient(135deg, #f8fbff 0%, #f0f6ff 100%); >
+            <h1>French airports passengers traffic</h1>
+            <div class="detail-skills">
+                <span class="detail-skill-tag">Tableau</span>
+                <span class="detail-skill-tag">Business Intelligence</span>
+                <span class="detail-skill-tag">Data Visualization</span>
+            </div>
+            <p class="detail-meta">February 2022<br>Wild Code School Training</p>
+            <p>As part of my training at Wild Code School, I analyzed passenger traffic at French airports to create an interactive dashboard in Tableau. This project allowed users to explore and visualize data patterns effectively.</p>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1khZgPLLxgIwZeb18zDbNrJJrnPoQpfy-&sz=w800" alt="French airports" class="detail-image" />
+    </div>
+
+            <div class="accordion-section">
+                <h3>📋 Objective</h3>
+                <ul>
+                <li>Address the advertising client's key question: In which French airports and during which seasons should advertisements be displayed to maximize audience exposure?</li>
+                <li>Create an interactive dashboard</li>
+                <li>Visualize passenger traffic patterns across different airports and seasons</li>
+                </ul>
+            </div>
+
+            <div class="accordion-section">
+                <h3>🛠️ Tools & Data</h3>
+                <p><a href="https://raw.githubusercontent.com/WildCodeSchool/data-training-resources/refs/heads/main/datasets/avia_tf_apal_1_Data.csv" target="_blank" style="color: #003366; text-decoration: underline;">Dataset available here</a></p>
+            </div>
+
+            <div class="accordion-section">
+                <h3>✨ Result</h3>
+                <ul>
+                <li>Interactive Tableau dashboard with data storytelling</li>
+                <li>Clear visualization of seasonal passenger traffic patterns</li>
+                <li>Actionable insights for advertising placement decisions</li>
+                </ul>
+            </div>
+
+    <div style="background-color:#f5f5f5; padding:10px; border-radius:8px; margin-top: 12px;">
+      <div class='tableauPlaceholder' id='viz1773762692369' style='position: relative'>
+          <noscript>
+            <a href='#'>
+            <img alt='Etude de l&#39;évolution du nombre de passager dans les 15 aéroports français les plus importants ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FR&#47;FRENCH_Airports_traffic&#47;Story&#47;1_rss.png' style='border: none' />
+          </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='FRENCH_Airports_traffic&#47;Story' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FR&#47;FRENCH_Airports_traffic&#47;Story&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+      </div>                
+            <script type='text/javascript'>                    
+              var divElement = document.getElementById('viz1773762692369');                    
+              var vizElement = divElement.getElementsByTagName('object')[0];                    
+              vizElement.style.width='1016px';vizElement.style.height='877px';                    
+              var scriptElement = document.createElement('script');                    
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+    </div>
+    
+    <button class="back-to-top" data-target="projects">↑ Back to projects</button>
+</section>
+
+<!-- CARD 3 DETAIL: POWER BI -->
+<section id="project-pbi" class="project-detail">
+  <div class="detail-header">
+    <div class="detail-header-content">
+      <h1>HR Analytics Project - Bellevue Design</h1>
+       <div class="detail-skills">
+        <span class="detail-skill-tag">Power BI</span>
+        <span class="detail-skill-tag">DAX</span>
+        <span class="detail-skill-tag">Power Query</span>
+        <span class="detail-skill-tag">Python</span>
+        <span class="detail-skill-tag">Row-Level Security</span>
+        <span class="detail-skill-tag">Data Visualization</span>
+      </div>
+      <p class="detail-meta">December 2025<br>Data Analyst in Power BI - DataCamp</p>
+      <p>Comprehensive HR analytics dashboard providing employee insights using Power BI with advanced features including row-level security for different department managers.</p>
+   </div>
+    <img src="https://drive.google.com/thumbnail?id=1NGPrB0-30fdBKkPJggRISAalmBfnbVsf&sz=w600" alt="Bellevue logo" class="detail-image" />
+ </div>
+
+  <div class="accordion-section">
+    <h3>📋 Objective</h3>
+    <ul>
+      <li>Create comprehensive employee analytics dashboard for HR decision-making</li>
+      <li>Provide role-based security for different department managers</li>
+      <li>Enable self-service analytics for HR personnel</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>🛠️ Tools</h3>
+    <p>Power BI | Power Query & M Language | DAX | Python | Row-Level Security (RLS)</p>
+  </div>
+
+  <div class="accordion-section">
+    <h3>⚙️ Process</h3>
+    <ul>
+      <li>Data extraction and transformation using Power Query</li>
+      <li>Data cleaning and enrichment with Python</li>
+      <li>Development of interactive dashboards with advanced DAX measures</li>
+      <li>Implementation of Row-Level Security for department managers</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>✨ Result</h3>
+    <ul>
+      <li>Interactive employee analytics dashboard deployed to 20+ users</li>
+      <li>Reduced HR reporting time by 80%</li>
+      <li>Enabled data-driven HR decisions through self-service analytics</li>
+    </ul>
+  </div>
+    
+  <!-- Dashboard Carousel -->
+<div class="carousel-container">
+<div class="carousel-wrapper">
+    <div class="carousel-slides">
+        <div class="carousel-slide active">
+            <img alt="Dashboard page 1" src="https://drive.google.com/thumbnail?id=1_UddeJ2jN-mWVQm6Xj1snzCrqI1SHXNm&sz=w800"  style='border: none; width: 100%; max-width: 800px; border-radius: 2px;' />
+       </div>
+        <div class="carousel-slide">
+            <img alt="Dashboard page 2" src="https://drive.google.com/thumbnail?id=147xZdRabWttC3VbJNNz_Wh08xp6fJjui&sz=w800"  style='border: none; width: 100%; max-width: 800px; border-radius: 2px;' />
+        </div>
+        <div class="carousel-slide">
+            <img alt="Dashboard page 3" src="https://drive.google.com/thumbnail?id=1n1n32vf5Pnx6k-dTwHJzvJWJ5Yxggkku&sz=w800" style='border: none; width: 100%; max-width: 800px; border-radius: 2px;' />
+        </div>
+        <div class="carousel-slide">
+            <img alt="Dashboard page 4" src="https://drive.google.com/thumbnail?id=1hhNR8XHkDDcxavS7_nmXQUZxtGflV73X&sz=w800"  style='border: none; width: 100%; max-width: 800px; border-radius: 2px;' />
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="carousel-btn carousel-prev" aria-label="Previous slide">❮</button>
+    <button class="carousel-btn carousel-next" aria-label="Next slide">❯</button>
+
+    <!-- Dot Indicators -->
+    <div class="carousel-dots">
+    <span class="dot active" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
+    <span class="dot" data-slide="2"></span>
+    <span class="dot" data-slide="3"></span>
+    </div>
+</div>
+</div>
+
+<button class="back-to-top" data-target="projects">↑ Back to projects</button>
+</section>
+
+<!-- CARD 4 DETAIL: GAPMINDER -->
+<section id="project-map" class="project-detail">
+  <div class="detail-header">
+    <div class="detail-header-content">
+      <h1>Reproducing a Gapminder map with Matplotlib and Seaborn</h1>
+      <div class="detail-skills">
+        <span class="detail-skill-tag">Python</span>
+        <span class="detail-skill-tag">Pandas</span>
+        <span class="detail-skill-tag">Matplotlib</span>
+        <span class="detail-skill-tag">Seaborn</span>
+        <span class="detail-skill-tag">Data Visualization</span>
+      </div>
+      <p class="detail-meta">December 2021 & November 2025<br>Wild Code School & Personal Project</p>
+      <p>Recreation of the famous Gapminder bubble chart visualization using Python libraries, combining data manipulation with advanced matplotlib and seaborn techniques.</p>
+    </div>
+  </div>
+
+  <div class="accordion-section">
+    <h3>📋 Objective</h3>
+    <ul>
+      <li>Reproduce Gapminder bubble chart with Pandas and Matplotlib/Seaborn</li>
+      <li>X-axis: GDP per capita on logarithmic scale</li>
+      <li>Y-axis: Life expectancy</li>
+      <li>Bubble size: Proportional to population</li>
+      <li>Color coding: By region (Americas, Africa, Asia, Europe)</li>
+      <li>Include labels for 50 most populous countries</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>🛠️ Tools & Data Manipulation</h3>
+    <ul>
+      <li>Starting from Python dictionary data source</li>
+      <li>Data manipulation with Pandas</li>
+      <li>Advanced visualization with Matplotlib and Seaborn</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>🔗 GitHub Project</h3>
+    <p><a href="https://github.com/Cat-Bellevue/gapminder_map" target="_blank" style="color: #003366; text-decoration: underline;">View full project on GitHub</a></p>
+  </div>
+
+  <div class="accordion-section">
+    <h3>✨ Result</h3>
+    <div style= padding:15px; border-radius:2px; margin-top: 6px;">
+      <img alt="Gapminder map visualization" src='https://drive.google.com/thumbnail?id=1MZurGtR_IcgU33xpbXPsarfnQ98E9uYn&sz=w800' style='border: none; width: 100%; max-width: 800px; border-radius: 2 px;' />
+    </div>
+  </div>
+
+  <button class="back-to-top" data-target="projects">↑ Back to projects</button>
+</section>
+
+<!-- CARD 5 DETAIL: WINE -->
+<section id="project-wine" class="project-detail">
+  <div class="detail-header">
+    <div class="detail-header-content">
+      <h1>Study of wine on the US market</h1>
+       <div class="detail-skills">
+        <span class="detail-skill-tag">Python</span>
+        <span class="detail-skill-tag">Tableau</span>
+        <span class="detail-skill-tag">Matplotlib</span>
+        <span class="detail-skill-tag">Seaborn</span>
+        <span class="detail-skill-tag">Machine Learning</span>
+        <span class="detail-skill-tag">Data Visualization</span>
+      </div>
+      <p class="detail-meta">February 2022<br>Wild Code School - Data Analyst Training (Checkpoint 4)</p>
+      <p>Comprehensive market analysis of the US wine market with pricing analysis and recommendations for Domaine des Croix wine bottles using exploratory data analysis and Tableau visualization.</p>
+
+    </div>
+    <img src="https://drive.google.com/thumbnail?id=13RSkoysWcAcK02f3hyIV56-YTGIDoIrt&sz=w800" alt="Bellevue logo" class="detail-image" />
+  </div>
+
+  <div class="accordion-section">
+    <h3>📋 Objective</h3>
+    <p><strong>Client:</strong> Domaine des Croix - Define optimal pricing for wine bottles in the US market</p>
+    <ul>
+      <li>Market analysis of 130k wine bottles dataset</li>
+      <li>Pricing analysis and recommendations for 14 Domaine des Croix wines</li>
+      <li>Identify market segments and competitive positioning</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>🛠️ Tools & Datasets</h3>
+    <ul>
+      <li><a href="https://github.com/murpi/wilddata/raw/master/wine.zip" target="_blank" style="color: #003366; text-decoration: underline;">130k wines dataset</a></li>
+      <li><a href="https://github.com/murpi/wilddata/raw/master/domaine_des_croix.csv" target="_blank" style="color: #003366; text-decoration: underline;">Domaine des Croix wines dataset</a></li>
+      <li>Python | Tableau | Pandas | Matplotlib | Seaborn</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>⚙️ Process</h3>
+    <ul>
+      <li>Data preparation and exploratory analysis</li>
+      <li>Market analysis by region, variety, and price points</li>
+      <li>Interactive dashboard creation with Tableau</li>
+      <li>Price recommendations based on market positioning</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>✨ Result</h3>
+    <ul>
+      <li>Price recommendations for client's wine portfolio</li>
+      <li>Market positioning analysis and competitive insights</li>
+      <li>Interactive Tableau dashboard for ongoing market monitoring</li>
+    </ul>
+  </div>
+
+  <div style="background-color:#f5f5f5; padding:10px; border-radius:8px; margin-top: 12px;">
+        <div class='tableauPlaceholder' id='viz1773755822490' style='position: relative; height: 850px;'>
+          <noscript>
+              <a href='#'>
+              <img alt="Wine Market Analysis" src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wi&#47;WineonUSMarket&#47;Wine_origin&#47;1_rss.png' style='border: none' />
+              </a>
+          </noscript>
+          <object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='WineonUSMarket&#47;Wine_origin' />
+              <param name='tabs' value='yes' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wi&#47;WineonUSMarket&#47;Wine_origin&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1773755822490');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height='850px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+  </div>
+
+  <button class="back-to-top" data-target="projects">↑ Back to projects</button>
+</section>
+
+<!-- CARD 6 DETAIL: WEBSCRAPING -->
+<section id="project-scraping" class="project-detail">
+  <div class="detail-header">
+    <div class="detail-header-content">
+      <h1>Webscraping with Beautiful Soup & Geocoding</h1>
+      <div class="detail-skills">
+        <span class="detail-skill-tag">Python</span>
+        <span class="detail-skill-tag">Webscraping</span>
+        <span class="detail-skill-tag">Beautiful Soup</span>
+        <span class="detail-skill-tag">Folium</span>
+        <span class="detail-skill-tag">API Calls</span>
+        <span class="detail-skill-tag">Regex</span>
+      </div>
+      <p class="detail-meta">December 2021<br>Wild Code School - Data Analyst Training</p>
+      <p>Hands-on project combining web scraping techniques with geocoding APIs to collect and visualize geographical data on interactive maps using Folium.</p> 
+    </div>    
+    <img alt="Folium map" src="https://drive.google.com/thumbnail?id=1aJA4-69KDgT_i7nt03VHiQUA7jYi1UjI&sz=w800"  class="detail-image" />
+</div>
+
+  <div class="accordion-section">
+    <h3>📋 Objective</h3>
+    <ul>
+      <li>Master web scraping fundamentals with Beautiful Soup</li>
+      <li>Collect and clean structured data from websites</li>
+      <li>Geocode addresses using OpenStreetMap API (Nominatim)</li>
+      <li>Visualize geographical data on interactive maps</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>🛠️ Tools & Libraries</h3>
+    <p>Python | Beautiful Soup | Requests | Pandas | JSON | Regex | Folium</p>
+    <p><strong>Data Sources:</strong> Nominatim API (OpenStreetMap)</p>
+    <p><strong>&</strong> <a href="https://www.chucknorrisfacts.fr/facts/top/1" target="_blank" style="color: #003366; text-decoration: underline;">Chuck Norris Facts Webpage</a></p>
+  </div>
+
+  <div class="accordion-section">
+    <h3>⚙️ Process</h3>
+    <ul>
+      <li>Web scraping with Beautiful Soup, working with JSON and API Requests</li>
+      <li>Data extraction and cleaning with Pandas</li>
+      <li>Regex patterns for text parsing</li>
+      <li>Geocoding using Nominatim/OpenStreetMap API</li>
+      <li>Interactive map visualization with Folium</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>✨ Result</h3>
+    <ul>
+      <li>Interactive map with geocoded locations</li>
+      <li><a href="https://github.com/Cat-Bellevue/portfolio_content" target="_blank" style="color: #003366; text-decoration: underline;">View code on GitHub</a></li>
+    </ul>
+    <div style="padding:4px; border-radius:2px; margin-top: 2px;">
+      <img alt="Webscraping project result" src="https://drive.google.com/thumbnail?id=1groeVUf_PSwBSKh4H9ynAFdkr6Ow1q3U&sz=w800" class="detail-image" style="border: none; width: 100%; max-width: 1000px; border-radius: 2px;/>
+    </div>
+  </div>
+
+  <button class="back-to-top" data-target="projects">↑ Back to projects</button>
+</section>
+
+<!-- CARD 7 DETAIL: SPOTIFY -->
+<section id="project-spotify" class="project-detail">
+  <div class="detail-header">
+    <div class="detail-header-content">
+      <h1>Spotify database analysis</h1>
+     <div class="detail-skills">
+        <span class="detail-skill-tag">Python</span>
+        <span class="detail-skill-tag">Machine Learning</span>
+        <span class="detail-skill-tag">Matplotlib</span>
+        <span class="detail-skill-tag">Seaborn</span>
+        <span class="detail-skill-tag">Plotly Express</span>
+        <span class="detail-skill-tag">Data Exploration</span>
+      </div>
+      <p class="detail-meta">December 2021<br>Wild Code School - Data Analyst Training (Checkpoint Examination)</p>
+      <p>Comprehensive exploratory data analysis of Spotify music database combining statistical analysis, interactive visualizations, and machine learning predictions.</p> 
+    </div>
+    <img alt="Bellevue logo" src="https://drive.google.com/thumbnail?id=1AatCgBlebJDS6hcZmSfpdNE_6M8apRZm&sz=w800" class="detail-image" />
+  </div>
+
+  <div class="accordion-section">
+    <h3>📋 Objective</h3>
+    <ul>
+      <li>Explore Spotify dataset for patterns and insights</li>
+      <li>Develop predictive models for music characteristics</li>
+      <li>Create diverse visualizations for data storytelling</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>🛠️ Tools & Libraries</h3>
+    <p>Python | Matplotlib | Seaborn | Plotly Express | Scikit-Learn | Pandas</p>
+  </div>
+
+  <div class="accordion-section">
+    <h3>⚙️ Process</h3>
+    <ul>
+      <li>Exploratory data analysis (EDA) and descriptive statistics</li>
+      <li>Data visualization: scatterplots, heatmaps, pairplots, distributions</li>
+      <li>Machine Learning: KNN classifier, regression models</li>
+      <li>Model evaluation with accuracy scores</li>
+      <li>Data normalization and feature scaling</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>✨ Technologies & Techniques</h3>
+    <p>Data exploration | Scatterplots | Heatmaps | Pairplots | KNN classification | Regression analysis | Model accuracy | Normalization</p>
+    <p><a href="https://github.com/Cat-Bellevue/portofolio_content/blob/main/" target="_blank" style="color: #003366; text-decoration: underline;">View code on GitHub</a></p> 
+    <div style="padding:4px; border-radius:2px; margin-top: 2px;">
+      <img alt="Webscraping project result" src="https://drive.google.com/thumbnail?id=1pa_3F0wYuSpbVU9R8HN4QiaJr-S96akD&sz=w800" class="detail-image" />
+   
+
+    </div>
+  </div>
+
+  <button class="back-to-top" data-target="projects">↑ Back to projects</button>
+</section>
+
+<!-- CARD 8 DETAIL: EVENT AGGREGATOR -->
+<section id="project-event" class="project-detail">
+  <div class="detail-header">
+    <div class="detail-header-content">
+      <h1>Event aggregator - Data Product MVP</h1>
+      <div class="detail-skills">
+        <span class="detail-skill-tag">Python</span>
+        <span class="detail-skill-tag">Streamlit</span>
+        <span class="detail-skill-tag">Webscraping</span>
+        <span class="detail-skill-tag">Beautiful Soup</span>
+        <span class="detail-skill-tag">API Calls</span>
+        <span class="detail-skill-tag">AI</span>
+      </div>
+      <p class="detail-meta">March 2026 - IN PROGRESS<br>Personal Project</p>
+      <p>Building a personal, updatable dashboard that aggregates upcoming events (sports, culture, concerts, exhibitions) from my region (Haute-Savoie / Geneva) and selected national/European highlights. A practical tool for personal use combined with hands-on learning of modern data technologies.</p>
+    </div>
+    <img src="https://drive.google.com/thumbnail?id=176dXcLUgPDcAN6yJe6p_FwtijFqgxQwe&sz=w400" alt="Event logo" class="detail-image" />
+</div>  
+  <div class="accordion-section">
+    <h3>📋 Objective</h3>
+    <p><strong>Personal use:</strong> Build a practical, updatable dashboard to discover events in my region</p>
+    <p><strong>Learning goals:</strong> Hands-on practice with:</p>
+    <ul>
+      <li>Python and modern data pipelines</li>
+      <li>APIs and web scraping</li>
+      <li>Interactive dashboards with Streamlit</li>
+      <li>Claude AI for data processing and insights</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>📍 MVP Scope</h3>
+    <ul>
+      <li><strong>Geography:</strong> Haute-Savoie region + neighboring Switzerland</li>
+      <li><strong>Categories:</strong> Sports events</li>
+      <li><strong>Sources:</strong> 3-5 data sources maximum</li>
+      <li><strong>Storage:</strong> SQLite + Parquet files</li>
+      <li><strong>Output:</strong> Streamlit dashboard with filters, interactive map, ranked events</li>
+    </ul>
+  </div>
+
+  <div class="accordion-section">
+    <h3>🛠️ Technologies Stack</h3>
+    <p>Python | Pandas | Requests | Beautiful Soup | SQLite | Parquet | Streamlit | Claude API</p>
+  </div>
+
+  <div class="accordion-section">
+    <h3>⚙️ Development Process</h3>
+    <ol style="margin-left: 20px;">
+      <li><strong>Source Selection:</strong> Identify 3-5 reliable event data sources</li>
+      <li><strong>Data Model:</strong> Design unified data format across all sources</li>
+      <li><strong>ETL Pipeline:</strong> Web scraping and API integration</li>
+      <li><strong>Data Processing:</strong> Cleaning, normalization, enrichment with AI</li>
+      <li><strong>Dashboard Design:</strong> Interactive Streamlit interface with filters and map</li>
+      <li><strong>Deployment:</strong> Automated updates and monitoring</li>
+    </ol>
+  </div>
+
+  <div class="accordion-section">
+    <h3>✨ Current Status</h3>
+    <ul>
+      <li>MVP framework in development</li>
+      <li>Data source integration in progress</li>
+    </ul>
+  </div>
+
+   <div class="accordion-section">
+    <h3>Unified Data Model</h3>
+    <img src="https://drive.google.com/thumbnail?id=1ArzRSXxq5ArcKYixV8zvePRxgEFoV69c&sz=w600" alt="Data Model" class="detail-image" />
+  </div>
+
+  <button class="back-to-top" data-target="projects">↑ Back to projects</button>
+</section>
+
+<script>
+  /* Inject image or emoji placeholder */
+  document.querySelectorAll('.proj-card').forEach(card => {
+    const wrapper = card.querySelector('.card-img-wrapper');
+    const imgUrl = (card.dataset.img || '').trim();
+    const icon = card.dataset.icon || '📊';
+    if (imgUrl) {
+      const img = document.createElement('img');
+      img.src = imgUrl;
+      img.alt = card.dataset.title || '';
+      img.className = 'card-img';
+      wrapper.replaceWith(img);
+    } else {
+      const ph = document.createElement('div');
+      ph.className = 'card-img-placeholder';
+      ph.textContent = icon;
+      wrapper.replaceWith(ph);
+    }
+  });
+
+  /* Filter logic */
+  const pills = document.querySelectorAll('.pill[data-filter]');
+  const cards = document.querySelectorAll('.proj-card');
+  const searchEl = document.getElementById('q');
+  const noRes = document.getElementById('no-results');
+  let activeFilter = 'all';
+
+  function applyFilters() {
+    const query = searchEl.value.toLowerCase().trim();
+    let visible = 0;
+    cards.forEach(card => {
+      const tags = (card.dataset.tags || '').toLowerCase();
+      const title = (card.dataset.title || '').toLowerCase();
+      const ok = (activeFilter === 'all' || tags.includes(activeFilter))
+              && (!query || tags.includes(query) || title.includes(query));
+      card.classList.toggle('hidden', !ok);
+      if (ok) visible++;
+    });
+    noRes.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeFilter = pill.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  searchEl.addEventListener('input', applyFilters);
+
+  /* Accordion functionality */
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.closest('.accordion-item');
+      const content = item.querySelector('.accordion-content');
+      const isActive = header.classList.contains('active');
+
+      if (isActive) {
+        header.classList.remove('active');
+        content.classList.remove('active');
+      } else {
+        header.classList.add('active');
+        content.classList.add('active');
+      }
+    });
+  });
+
+  /* Smooth scrolling for navigation buttons */
+  function smoothScrollTo(targetId) {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+
+  /* View project buttons */
+  document.querySelectorAll('.view-btn[data-target]').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.dataset.target;
+      smoothScrollTo(targetId);
+    });
+  });
+
+  /* Back to projects buttons */
+  document.querySelectorAll('.back-to-top[data-target]').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.dataset.target;
+      smoothScrollTo(targetId);
+    });
+  });
+
+  /* Carousel functionality */
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(n) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    slides[n].classList.add('active');
+    dots[n].classList.add('active');
+  }
+
+  document.querySelectorAll('.carousel-next').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    });
+  });
+
+  document.querySelectorAll('.carousel-prev').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    });
+  });
+
+  document.querySelectorAll('.dot').forEach(dot => {
+    dot.addEventListener('click', (e) => {
+      currentSlide = parseInt(e.target.dataset.slide);
+      showSlide(currentSlide);
+    });
+  });
+
+</script>
+
+</body>
+
 
   
 </main>
 
 <footer>
-  © 2025 - Catherine FENU </footer>
+  © 2026 - Catherine FENU </footer>
 
 </body>
 </html>
